@@ -58,7 +58,80 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  # assets:
+  assets:
+    - assets/icon da main/virus_1198638.png
+    - assets/icon da main/alien.png
+    - assets/icon da main/dinosaur_8351837.png
+
+    - assets/animais/mamiferos/baleia.png
+    - assets/animais/mamiferos/camelo.png
+    - assets/animais/mamiferos/cavalo.png
+    - assets/animais/mamiferos/cervo.png
+    - assets/animais/mamiferos/coala.png
+    - assets/animais/mamiferos/elefante.png
+    - assets/animais/mamiferos/foca.png
+    - assets/animais/mamiferos/girafa.png
+    - assets/animais/mamiferos/golfinho.png
+    - assets/animais/mamiferos/leao.png
+    - assets/animais/mamiferos/macaco.png
+    - assets/animais/mamiferos/morcego.png
+    - assets/animais/mamiferos/narval.png
+    - assets/animais/mamiferos/onca.png
+    - assets/animais/mamiferos/ornitorinco.png
+    - assets/animais/mamiferos/ourico.png
+    - assets/animais/mamiferos/ovelha.png
+    - assets/animais/mamiferos/panda.png
+    - assets/animais/mamiferos/polar.png
+    - assets/animais/mamiferos/porco.png
+    - assets/animais/mamiferos/raposa.png
+    - assets/animais/mamiferos/rato.png
+    - assets/animais/mamiferos/sloth_4775527.png
+    - assets/animais/mamiferos/tamandua.png
+    - assets/animais/mamiferos/tatu.png
+    - assets/animais/mamiferos/vaca.png
+    - assets/animais/mamiferos/zebra.png
+
+    - assets/animais/aves/aguia.png
+    - assets/animais/aves/arara.png
+    - assets/animais/aves/avestruz.png
+    - assets/animais/aves/cisne.png
+    - assets/animais/aves/coruja.png
+    - assets/animais/aves/flamingo.png
+    - assets/animais/aves/galinha.png
+    - assets/animais/aves/kiwi.png
+    - assets/animais/aves/pavao.png
+    - assets/animais/aves/pinguim.png
+    - assets/animais/aves/tucano.png
+    - assets/animais/aves/urubu.png
+
+    - assets/animais/anfibios/axolote.png
+    - assets/animais/anfibios/salamandra.png
+    - assets/animais/anfibios/sapo.png
+
+    - assets/animais/moluscos/caracol.png
+    - assets/animais/moluscos/lula.png
+    - assets/animais/moluscos/polvo.png
+
+    - assets/animais/artropodes/abelha.png
+    - assets/animais/artropodes/aranha.png
+    - assets/animais/artropodes/besouro.png
+    - assets/animais/artropodes/borboleta.png
+    - assets/animais/artropodes/caranguejo.png
+    - assets/animais/artropodes/escorpiao.png
+    - assets/animais/artropodes/formiga.png
+    - assets/animais/artropodes/grilo.png
+    - assets/animais/artropodes/joaninha.png
+    - assets/animais/artropodes/lagosta.png
+    - assets/animais/artropodes/libelula.png
+    - assets/animais/artropodes/minhoca.png
+
+    - assets/animais/repteis/camaleao.png
+    - assets/animais/repteis/cobra.png
+    - assets/animais/repteis/jabuti.png
+    - assets/animais/repteis/jacare.png
+    - assets/animais/repteis/lagarto.png
+    - assets/animais/repteis/tartaruga.png
+  
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 
