@@ -5632,6 +5632,787 @@ class _AnimalsCardsState extends State<AnimalsCards> {
                   ),
                 ),
                             
+                // CARDS PEIXES
+                
+                // CARD 1
+                Card(
+                  elevation: 4, // sombra
+                  shape: RoundedRectangleBorder(      
+                    borderRadius: BorderRadius.circular(12),  
+                    side: BorderSide(color: const Color.fromARGB(255, 221, 221, 221), width: 1)                
+                  ),
+                  shadowColor: Colors.black,
+                  color: const Color.fromARGB(255, 255, 255, 255),
+                  child: Row( // Dispoe os elementos numa linha (organizacao: textos a esquerda, imagens a direita)
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,                  
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      // CHILD 1: TÍTULO E SUBTÍTULO
+                      Padding(
+                        padding: EdgeInsets.all(12),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            Text(
+                              'Arraia',
+                              style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                            ),
+                            SizedBox(height: 4), // Espaçamento do Column
+                            
+                            Text(
+                              'Lorem ipsum dolor \nsit amet, consectetur.',
+                              style: TextStyle(color: Colors.grey[700]),
+                              textAlign: TextAlign.justify,
+                            ),
+                            SizedBox(height: 20),
+                            
+                            ElevatedButton(                              
+                              onPressed: (){
+                                Navigator.push(
+                                  context, 
+                                  MaterialPageRoute(builder: (context) => const TerceiraPag())
+                                );
+                              },
+                              style: ElevatedButton.styleFrom(
+                                fixedSize: Size(140, 12), // largura x altura
+                              ),
+                              child: const Text('Conhecer', 
+                                style: TextStyle(fontSize: 12),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                      
+
+                      // CHILD 2: imagem
+                      Padding(
+                        padding: const EdgeInsets.all(16.0),
+                        child: Container(
+                         
+                          width: 80,
+                          height: 80,
+                          decoration: BoxDecoration(
+                            color: const Color.fromARGB(255, 207, 250, 255),
+                            border: Border.all(
+                              color: const Color.fromARGB(255, 100, 185, 192),// Cor da borda
+                              width: 1,            // Espessura da borda
+                            ),
+                            borderRadius: BorderRadius.circular(8), // Cantos arredondados (opcional)
+                          ),
+
+                          child: Padding(
+                            padding: EdgeInsets.all(8),
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(8),
+                              child: Image.asset(
+                                'assets/animais/peixes/arraia.png',
+                                width: 40,
+                                height: 40,
+                                fit: BoxFit.cover,
+                              ),
+                            ),
+                          ),
+                          
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+
+                // CARD 2
+                Card(
+                  elevation: 4, // sombra
+                      shape: RoundedRectangleBorder(      
+                    borderRadius: BorderRadius.circular(12),  
+                    side: BorderSide(color: const Color.fromARGB(255, 221, 221, 221), width: 1)                
+                  ),
+                  shadowColor: Colors.black,
+                  color: const Color.fromARGB(255, 255, 255, 255),
+                  child: Row( // Dispoe os elementos numa linha (organizacao: textos a esquerda, imagens a direita)
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,                  
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      // CHILD 1: TÍTULO E SUBTÍTULO
+                      Padding(
+                        padding: EdgeInsets.all(12),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            Text(
+                              'Baiacu',
+                              style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                            ),
+                            SizedBox(height: 4), // Espaçamento do Column
+                            
+                            Text(
+                              'Lorem ipsum dolor \nsit amet, consectetur.',
+                              style: TextStyle(color: Colors.grey[700]),
+                              textAlign: TextAlign.justify,
+                            ),
+                            SizedBox(height: 20),
+                            
+                            ElevatedButton(                              
+                              onPressed: (){
+                                Navigator.push(
+                                  context, 
+                                  MaterialPageRoute(builder: (context) => const TerceiraPag())
+                                );
+                              },
+                              style: ElevatedButton.styleFrom(
+                                fixedSize: Size(140, 12), // largura x altura
+                              ),
+                              child: const Text('Conhecer', 
+                                style: TextStyle(fontSize: 12),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                      
+
+                      // CHILD 2: imagem
+                      Padding(
+                        padding: const EdgeInsets.all(16.0),
+                        child: Container(
+                         
+                          width: 80,
+                          height: 80,
+                          decoration: BoxDecoration(
+                            color: const Color.fromARGB(255, 255, 208, 233),
+                            border: Border.all(
+                              color:const Color.fromARGB(255, 255, 162, 212),// Cor da borda
+                              width: 1,            // Espessura da borda
+                            ),
+                            borderRadius: BorderRadius.circular(8), // Cantos arredondados (opcional)
+                          ),
+
+                          child: Padding(
+                            padding: EdgeInsets.all(8),
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(8),
+                              child: Image.asset(
+                                'assets/animais/peixes/baiacu.png',
+                                width: 40,
+                                height: 40,
+                                fit: BoxFit.cover,
+                              ),
+                            ),
+                          ),                      
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+
+                // CARD 3
+                Card(
+                  elevation: 4, // sombra
+                      shape: RoundedRectangleBorder(      
+                        borderRadius: BorderRadius.circular(12),  
+                        side: BorderSide(color: const Color.fromARGB(255, 221, 221, 221), width: 1)                
+                      ),
+                  shadowColor: Colors.black,
+                  color: const Color.fromARGB(255, 255, 255, 255),
+                  child: Row( // Dispoe os elementos numa linha (organizacao: textos a esquerda, imagens a direita)
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,                  
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      // CHILD 1: TÍTULO E SUBTÍTULO
+                      Padding(
+                        padding: EdgeInsets.all(12),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            Text(
+                              'Cavalo-marinho',
+                              style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                            ),
+                            SizedBox(height: 4), // Espaçamento do Column
+                            
+                            Text(
+                              'Lorem ipsum dolor \nsit amet, consectetur.',
+                              style: TextStyle(color: Colors.grey[700]),
+                              textAlign: TextAlign.justify,
+                            ),
+                            SizedBox(height: 20),
+                            
+                            ElevatedButton(                              
+                              onPressed: (){
+                                Navigator.push(
+                                  context, 
+                                  MaterialPageRoute(builder: (context) => const TerceiraPag())
+                                );
+                              },
+                              style: ElevatedButton.styleFrom(
+                                fixedSize: Size(140, 12), // largura x altura
+                              ),
+                              child: const Text('Conhecer', 
+                                style: TextStyle(fontSize: 12),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                      
+
+                      // CHILD 2: imagem
+                      Padding(
+                        padding: const EdgeInsets.all(16.0),
+                        child: Container(
+                         
+                          width: 80,
+                          height: 80,
+                          decoration: BoxDecoration(
+                            color: const Color.fromARGB(255, 255, 243, 209),
+                            border: Border.all(
+                              color: const Color.fromARGB(255, 255, 221, 129), // Cor da borda
+                              width: 1,            // Espessura da borda
+                            ),
+                            borderRadius: BorderRadius.circular(8), // Cantos arredondados (opcional)
+                          ),
+
+                          child: Padding(
+                            padding: EdgeInsets.all(8),
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(8),
+                              child: Image.asset(
+                                'assets/animais/peixes/cavalo-marinho.png',
+                                width: 40,
+                                height: 40,
+                                fit: BoxFit.cover,
+                              ),
+                            ),
+                          ),
+                          
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+
+                // CARD 4
+                Card(
+                  elevation: 4, // sombra
+                      shape: RoundedRectangleBorder(      
+                    borderRadius: BorderRadius.circular(12),  
+                    side: BorderSide(color: const Color.fromARGB(255, 221, 221, 221), width: 1)                
+                  ),
+                  shadowColor: Colors.black,
+                  color: const Color.fromARGB(255, 255, 255, 255),
+                  child: Row( // Dispoe os elementos numa linha (organizacao: textos a esquerda, imagens a direita)
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,                  
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      // CHILD 1: TÍTULO E SUBTÍTULO
+                      Padding(
+                        padding: EdgeInsets.all(12),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            Text(
+                              'Enguia',
+                              style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                            ),
+                            SizedBox(height: 4), // Espaçamento do Column
+                            
+                            Text(
+                              'Lorem ipsum dolor \nsit amet, consectetur.',
+                              style: TextStyle(color: Colors.grey[700]),
+                              textAlign: TextAlign.justify,
+                            ),
+                            SizedBox(height: 20),
+                            
+                            ElevatedButton(                              
+                              onPressed: (){
+                                Navigator.push(
+                                  context, 
+                                  MaterialPageRoute(builder: (context) => const TerceiraPag())
+                                );
+                              },
+                              style: ElevatedButton.styleFrom(
+                                fixedSize: Size(140, 12), // largura x altura
+                              ),
+                              child: const Text('Conhecer', 
+                                style: TextStyle(fontSize: 12),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                      
+
+                      // CHILD 2: imagem
+                      Padding(
+                        padding: const EdgeInsets.all(16.0),
+                        child: Container(
+                          width: 80,
+                          height: 80,
+                          decoration: BoxDecoration(
+                            color: const Color.fromARGB(255, 255, 217, 206),
+                            border: Border.all(
+                              color:const Color.fromARGB(255, 255, 176, 154), // Cor da borda
+                              width: 1,            // Espessura da borda
+                            ),
+                            borderRadius: BorderRadius.circular(8), // Cantos arredondados (opcional)
+                          ),
+
+                          child: Padding(
+                            padding: EdgeInsets.all(8),
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(8),
+                              child: Image.asset(
+                                'assets/animais/peixes/enguia.png',
+                                width: 40,
+                                height: 40,
+                                fit: BoxFit.cover,
+                              ),
+                            ),
+                          ),
+                          
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+
+                // CARD 5
+                Card(
+                  elevation: 4, // sombra
+                      shape: RoundedRectangleBorder(      
+                    borderRadius: BorderRadius.circular(12),  
+                    side: BorderSide(color: const Color.fromARGB(255, 221, 221, 221), width: 1)                
+                  ),
+                  shadowColor: Colors.black,
+                  color: const Color.fromARGB(255, 255, 255, 255),
+                  child: Row( // Dispoe os elementos numa linha (organizacao: textos a esquerda, imagens a direita)
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,                  
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      // CHILD 1: TÍTULO E SUBTÍTULO
+                      Padding(
+                        padding: EdgeInsets.all(12),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            Text(
+                              'Peixe-espada',
+                              style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                            ),
+                            SizedBox(height: 4), // Espaçamento do Column
+                            
+                            Text(
+                              'Lorem ipsum dolor \nsit amet, consectetur.',
+                              style: TextStyle(color: Colors.grey[700]),
+                              textAlign: TextAlign.justify,
+                            ),
+                            SizedBox(height: 20),
+                            
+                            ElevatedButton(                              
+                              onPressed: (){
+                                Navigator.push(
+                                  context, 
+                                  MaterialPageRoute(builder: (context) => const TerceiraPag())
+                                );
+                              },
+                              style: ElevatedButton.styleFrom(
+                                fixedSize: Size(140, 12), // largura x altura
+                              ),
+                              child: const Text('Conhecer', 
+                                style: TextStyle(fontSize: 12),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                      
+
+                      // CHILD 2: imagem
+                      Padding(
+                        padding: const EdgeInsets.all(16.0),
+                        child: Container(
+                         
+                          width: 80,
+                          height: 80,
+                          decoration: BoxDecoration(
+                            color: const Color.fromARGB(255, 255, 220, 220),
+                            border: Border.all(
+                              color:const Color.fromARGB(255, 255, 157, 157), // Cor da borda
+                              width: 1,            // Espessura da borda
+                            ),
+                            borderRadius: BorderRadius.circular(8), // Cantos arredondados (opcional)
+                          ),
+
+                          child: Padding(
+                            padding: EdgeInsets.all(8),
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(8),
+                              child: Image.asset(
+                                'assets/animais/peixes/peixe-espada.png',
+                                width: 40,
+                                height: 40,
+                                fit: BoxFit.cover,
+                              ),
+                            ),
+                          ),
+                          
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              
+                // CARD 6
+                Card(
+                  elevation: 4, // sombra
+                      shape: RoundedRectangleBorder(      
+                    borderRadius: BorderRadius.circular(12),  
+                    side: BorderSide(color: const Color.fromARGB(255, 221, 221, 221), width: 1)                
+                  ),
+                  shadowColor: Colors.black,
+                  color: const Color.fromARGB(255, 255, 255, 255),
+                  child: Row( // Dispoe os elementos numa linha (organizacao: textos a esquerda, imagens a direita)
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,                  
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      // CHILD 1: TÍTULO E SUBTÍTULO
+                      Padding(
+                        padding: EdgeInsets.all(12),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            Text(
+                              'Coala',
+                              style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                            ),
+                            SizedBox(height: 4), // Espaçamento do Column
+                            
+                            Text(
+                              'Lorem ipsum dolor \nsit amet, consectetur.',
+                              style: TextStyle(color: Colors.grey[700]),
+                              textAlign: TextAlign.justify,
+                            ),
+                            SizedBox(height: 20),
+                            
+                            ElevatedButton(                              
+                              onPressed: (){
+                                Navigator.push(
+                                  context, 
+                                  MaterialPageRoute(builder: (context) => const TerceiraPag())
+                                );
+                              },
+                              style: ElevatedButton.styleFrom(
+                                fixedSize: Size(140, 12), // largura x altura
+                              ),
+                              child: const Text('Conhecer', 
+                                style: TextStyle(fontSize: 12),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                      
+
+                      // CHILD 2: imagem
+                      Padding(
+                        padding: const EdgeInsets.all(16.0),
+                        child: Container(
+                         
+                          width: 80,
+                          height: 80,
+                          decoration: BoxDecoration(
+                            color: const Color.fromARGB(255, 226, 254, 219),
+                            border: Border.all(
+                              color:const Color.fromARGB(255, 125, 191, 108), // Cor da borda
+                              width: 1,            // Espessura da borda
+                            ),
+                            borderRadius: BorderRadius.circular(8), // Cantos arredondados (opcional)
+                          ),
+
+                          child: Padding(
+                            padding: EdgeInsets.all(8),
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(8),
+                              child: Image.asset(
+                                'assets/animais/mamiferos/coala.png',
+                                width: 40,
+                                height: 40,
+                                fit: BoxFit.cover,
+                              ),
+                            ),
+                          ),
+                          
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+
+                // CARD 7
+                Card(
+                  elevation: 4, // sombra
+                      shape: RoundedRectangleBorder(      
+                    borderRadius: BorderRadius.circular(12),  
+                    side: BorderSide(color: const Color.fromARGB(255, 221, 221, 221), width: 1)                
+                  ),
+                  shadowColor: Colors.black,
+                  color: const Color.fromARGB(255, 255, 255, 255),
+                  child: Row( // Dispoe os elementos numa linha (organizacao: textos a esquerda, imagens a direita)
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,                  
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      // CHILD 1: TÍTULO E SUBTÍTULO
+                      Padding(
+                        padding: EdgeInsets.all(12),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            Text(
+                              'Elefante',
+                              style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                            ),
+                            SizedBox(height: 4), // Espaçamento do Column
+                            
+                            Text(
+                              'Lorem ipsum dolor \nsit amet, consectetur.',
+                              style: TextStyle(color: Colors.grey[700]),
+                              textAlign: TextAlign.justify,
+                            ),
+                            SizedBox(height: 20),
+                            
+                            ElevatedButton(                              
+                              onPressed: (){
+                                Navigator.push(
+                                  context, 
+                                  MaterialPageRoute(builder: (context) => const TerceiraPag())
+                                );
+                              },
+                              style: ElevatedButton.styleFrom(
+                                fixedSize: Size(140, 12), // largura x altura
+                              ),
+                              child: const Text('Conhecer', 
+                                style: TextStyle(fontSize: 12),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                      
+
+                      // CHILD 2: imagem
+                      Padding(
+                        padding: const EdgeInsets.all(16.0),
+                        child: Container(
+                         
+                          width: 80,
+                          height: 80,
+                          decoration: BoxDecoration(
+                            color: const Color.fromARGB(255, 255, 224, 198),
+                            border: Border.all(
+                              color:const Color.fromARGB(255, 255, 194, 144), // Cor da borda
+                              width: 1,            // Espessura da borda
+                            ),
+                            borderRadius: BorderRadius.circular(8), // Cantos arredondados (opcional)
+                          ),
+
+                          child: Padding(
+                            padding: EdgeInsets.all(8),
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(8),
+                              child: Image.asset(
+                                'assets/animais/mamiferos/elefante.png',
+                                width: 40,
+                                height: 40,
+                                fit: BoxFit.cover,
+                              ),
+                            ),
+                          ),                      
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+
+                // CARD 8
+                Card(
+                  elevation: 4, // sombra
+                      shape: RoundedRectangleBorder(      
+                    borderRadius: BorderRadius.circular(12),  
+                    side: BorderSide(color: const Color.fromARGB(255, 221, 221, 221), width: 1)                
+                  ),
+                  shadowColor: Colors.black,
+                  color: const Color.fromARGB(255, 255, 255, 255),
+                  child: Row( // Dispoe os elementos numa linha (organizacao: textos a esquerda, imagens a direita)
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,                  
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      // CHILD 1: TÍTULO E SUBTÍTULO
+                      Padding(
+                        padding: EdgeInsets.all(12),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            Text(
+                              'Foca',
+                              style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                            ),
+                            SizedBox(height: 4), // Espaçamento do Column
+                            
+                            Text(
+                              'Lorem ipsum dolor \nsit amet, consectetur.',
+                              style: TextStyle(color: Colors.grey[700]),
+                              textAlign: TextAlign.justify,
+                            ),
+                            SizedBox(height: 20),
+                            
+                            ElevatedButton(                              
+                              onPressed: (){
+                                Navigator.push(
+                                  context, 
+                                  MaterialPageRoute(builder: (context) => const TerceiraPag())
+                                );
+                              },
+                              style: ElevatedButton.styleFrom(
+                                fixedSize: Size(140, 12), // largura x altura
+                              ),
+                              child: const Text('Conhecer', 
+                                style: TextStyle(fontSize: 12),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                      
+
+                      // CHILD 2: imagem
+                      Padding(
+                        padding: const EdgeInsets.all(16.0),
+                        child: Container(
+                         
+                          width: 80,
+                          height: 80,
+                          decoration: BoxDecoration(
+                            color: const Color.fromARGB(255, 255, 224, 198),
+                            border: Border.all(
+                              color:const Color.fromARGB(255, 255, 192, 141), // Cor da borda
+                              width: 1,            // Espessura da borda
+                            ),
+                            borderRadius: BorderRadius.circular(8), // Cantos arredondados (opcional)
+                          ),
+
+                          child: Padding(
+                            padding: EdgeInsets.all(8),
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(8),
+                              child: Image.asset(
+                                'assets/animais/mamiferos/foca.png',
+                                width: 40,
+                                height: 40,
+                                fit: BoxFit.cover,
+                              ),
+                            ),
+                          ),                      
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+
+                // CARD 9
+                Card(
+                  elevation: 4, // sombra
+                      shape: RoundedRectangleBorder(      
+                    borderRadius: BorderRadius.circular(12),  
+                    side: BorderSide(color: const Color.fromARGB(255, 221, 221, 221), width: 1)                
+                  ),
+                  shadowColor: Colors.black,
+                  color: const Color.fromARGB(255, 255, 255, 255),
+                  child: Row( // Dispoe os elementos numa linha (organizacao: textos a esquerda, imagens a direita)
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,                  
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      // CHILD 1: TÍTULO E SUBTÍTULO
+                      Padding(
+                        padding: EdgeInsets.all(12),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            Text(
+                              'Girafa',
+                              style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                            ),
+                            SizedBox(height: 4), // Espaçamento do Column
+                            
+                            Text(
+                              'Lorem ipsum dolor \nsit amet, consectetur.',
+                              style: TextStyle(color: Colors.grey[700]),
+                              textAlign: TextAlign.justify,
+                            ),
+                            SizedBox(height: 20),
+                            
+                            ElevatedButton(                              
+                              onPressed: (){
+                                Navigator.push(
+                                  context, 
+                                  MaterialPageRoute(builder: (context) => const TerceiraPag())
+                                );
+                              },
+                              style: ElevatedButton.styleFrom(
+                                fixedSize: Size(140, 12), // largura x altura
+                              ),
+                              child: const Text('Conhecer', 
+                                style: TextStyle(fontSize: 12),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                      
+
+                      // CHILD 2: imagem
+                      Padding(
+                        padding: const EdgeInsets.all(16.0),
+                        child: Container(
+                         
+                          width: 80,
+                          height: 80,
+                          decoration: BoxDecoration(
+                            color: const Color.fromARGB(255, 255, 232, 202),
+                            border: Border.all(
+                              color:const Color.fromARGB(255, 253, 202, 136), // Cor da borda
+                              width: 1,            // Espessura da borda
+                            ),
+                            borderRadius: BorderRadius.circular(8), // Cantos arredondados (opcional)
+                          ),
+
+                          child: Padding(
+                            padding: EdgeInsets.all(8),
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(8),
+                              child: Image.asset(
+                                'assets/animais/mamiferos/girafa.png',
+                                width: 40,
+                                height: 40,
+                                fit: BoxFit.cover,
+                              ),
+                            ),
+                          ),                      
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+
+
 
 
 
