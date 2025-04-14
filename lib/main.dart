@@ -193,6 +193,8 @@ class TerceiraTela extends StatelessWidget {
               child: Text('ENTRAR'),
             ),
             Text('LOGIN CADASTRADO COM SUCESSO'),
+
+            Image.asset('assets/animais/aves/aguia.png'),
           ],
         ),
       ),
