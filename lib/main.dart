@@ -39,7 +39,7 @@ class PrimeiraTela extends StatelessWidget {
       body: Container(
         decoration: BoxDecoration(
           image: DecorationImage(
-            image: AssetImage('assets/fundo/inicio.jpeg'),
+            image: AssetImage('assets/fundo/inicio2.jpg'),
             fit: BoxFit.cover,
           ),
         ),
