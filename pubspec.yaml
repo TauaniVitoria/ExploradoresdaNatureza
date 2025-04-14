@@ -35,6 +35,11 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.8
 
+  # Dependências para o banco de dados SQLite
+  sqflite: ^2.3.2
+  path: ^1.8.3
+  path_provider: ^2.1.2
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -59,9 +64,19 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
+    # Banco de dados
+    - assets/database/animais-flutter.db
+
+    # Ícones e imagens
     - assets/icon da main/virus_1198638.png
     - assets/icon da main/alien.png
     - assets/icon da main/dinosaur_8351837.png
+
+    # Imagens de fundo
+    - assets/fundo/inicio.jpeg
+    - assets/fundo/fundo.jpeg
+    - assets/fundo/fundo-liso.jpeg
+    - assets/fundo/login.jpeg
 
     - assets/animais/mamiferos/baleia.png
     - assets/animais/mamiferos/camelo.png
@@ -131,7 +146,12 @@ flutter:
     - assets/animais/repteis/jacare.png
     - assets/animais/repteis/lagarto.png
     - assets/animais/repteis/tartaruga.png
-  
+    - assets/fundo/fundo-liso.jpeg
+    - assets/fundo/fundo.jpeg
+    - assets/fundo/inicio.jpeg
+    - assets/fundo/login.jpeg
+    - assets/fundo/inicio2.jpg
+
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 

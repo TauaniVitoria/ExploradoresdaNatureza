@@ -6,7 +6,6 @@ import 'Categorias/CategPlantas.dart';
 
 class TelaPrincipal extends StatelessWidget {
   const TelaPrincipal({super.key});
-  
 
   @override
   Widget build(BuildContext context) {
@@ -17,14 +16,11 @@ class TelaPrincipal extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              'Olá $nomeUsuario!',
+              '',
               style: TextStyle(fontSize: 24, fontWeight: FontWeight.normal),
             ),
             SizedBox(height: 8),
-            Text(
-              'Bem vindo(a) ao Nome do App!',
-              style: TextStyle(fontSize: 18),
-            ),
+            Text('Bem vindo(a), $nomeUsuario!', style: TextStyle(fontSize: 18)),
 
             // Retângulo PROGRESSO
             SizedBox(height: 24),
@@ -59,11 +55,26 @@ class TelaPrincipal extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  _buildTopicButton(context, 'assets/icon da main/dinosaur_8351837.png', 'Seres do Passado', TelaTema1()),
+                  _buildTopicButton(
+                    context,
+                    'assets/icon da main/dinosaur_8351837.png',
+                    'Seres do Passado',
+                    TelaTema1(),
+                  ),
                   SizedBox(width: 10),
-                  _buildTopicButton(context, 'assets/icon da main/alien.png', 'Vida fora da Terra', TelaTema2()),
+                  _buildTopicButton(
+                    context,
+                    'assets/icon da main/alien.png',
+                    'Vida fora da Terra',
+                    TelaTema2(),
+                  ),
                   SizedBox(width: 10),
-                  _buildTopicButton(context, 'assets/icon da main/virus_1198638.png', 'Vida invisível', TelaTema3()),
+                  _buildTopicButton(
+                    context,
+                    'assets/icon da main/virus_1198638.png',
+                    'Vida invisível',
+                    TelaTema3(),
+                  ),
                 ],
               ),
             ),
@@ -80,11 +91,26 @@ class TelaPrincipal extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  _buildCategoryItem(context, Icons.supervised_user_circle, 'Animais', AnimalsCards()),
+                  _buildCategoryItem(
+                    context,
+                    Icons.supervised_user_circle,
+                    'Animais',
+                    AnimalsCards(),
+                  ),
                   SizedBox(width: 10),
-                  _buildCategoryItem(context, Icons.supervised_user_circle, 'Plantas', PlantasCards()),
+                  _buildCategoryItem(
+                    context,
+                    Icons.supervised_user_circle,
+                    'Plantas',
+                    PlantasCards(),
+                  ),
                   SizedBox(width: 10),
-                  _buildCategoryItem(context, Icons.supervised_user_circle, 'Ecossistemas', TelaTema1()),
+                  _buildCategoryItem(
+                    context,
+                    Icons.supervised_user_circle,
+                    'Ecossistemas',
+                    TelaTema1(),
+                  ),
                 ],
               ),
             ),
@@ -120,10 +146,7 @@ class TelaPrincipal extends StatelessWidget {
               children: [
                 Icon(Icons.account_box, size: 20, color: Colors.black),
                 SizedBox(width: 8),
-                Text(
-                  'Sed do eiusmod ',
-                  style: TextStyle(fontSize: 16),
-                ),
+                Text('Sed do eiusmod ', style: TextStyle(fontSize: 16)),
               ],
             ),
 
@@ -171,54 +194,63 @@ class TelaPrincipal extends StatelessWidget {
     );
   }
 
-
   // Contruindo os widgets pro carrossel
-  Widget _buildTopicButton(BuildContext context, String imagePath, String label, Widget destination) {
+  Widget _buildTopicButton(
+    BuildContext context,
+    String imagePath,
+    String label,
+    Widget destination,
+  ) {
     return ElevatedButton(
-      style: ElevatedButton.styleFrom( 
-        shadowColor: Colors.black,       
+      style: ElevatedButton.styleFrom(
+        shadowColor: Colors.black,
         padding: EdgeInsets.symmetric(horizontal: 28, vertical: 16),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(12),
           side: BorderSide(
-            color: const Color.fromARGB(47, 0, 0, 0), 
+            color: const Color.fromARGB(47, 0, 0, 0),
             style: BorderStyle.solid,
             width: 1,
           ),
         ),
-        
+
         backgroundColor: Color.fromARGB(255, 248, 247, 247),
       ),
       onPressed: () {
-        Navigator.push(context, MaterialPageRoute(builder: (context) => destination));
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => destination),
+        );
       },
-      
+
       child: Row(
         mainAxisSize: MainAxisSize.min,
         children: [
-          Image.asset(
-            imagePath,
-            width: 36,
-            height: 36,
-          ),
-          SizedBox(width: 30, height: 50,),
+          Image.asset(imagePath, width: 36, height: 36),
+          SizedBox(width: 30, height: 50),
           Text(label, style: TextStyle(fontSize: 16)),
         ],
       ),
     );
   }
 
-  Widget _buildCategoryItem(BuildContext context, IconData icon, String label, Widget destination) {
+  Widget _buildCategoryItem(
+    BuildContext context,
+    IconData icon,
+    String label,
+    Widget destination,
+  ) {
     return ElevatedButton(
       style: ElevatedButton.styleFrom(
         padding: EdgeInsets.symmetric(horizontal: 0, vertical: 0),
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(12),
-        ),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
       ),
-      onPressed: (){
-        Navigator.push(context, MaterialPageRoute(builder: (context) => destination));
-      }, 
+      onPressed: () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => destination),
+        );
+      },
       child: Container(
         width: 300,
         height: 300,
@@ -231,33 +263,16 @@ class TelaPrincipal extends StatelessWidget {
           children: [
             Icon(icon, size: 40, color: Colors.black54),
             SizedBox(height: 8),
-            Text(label, style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+            Text(
+              label,
+              style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+            ),
           ],
         ),
       ),
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // Telas de destino dos temas > COLOCAR EM UM NOVO ARQUIVO
 class TelaTema1 extends StatelessWidget {
@@ -266,11 +281,10 @@ class TelaTema1 extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: Text('Tema 1')),
       body: SingleChildScrollView(
-         padding: const EdgeInsets.all(16.0),
+        padding: const EdgeInsets.all(16.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-
             // img retangulo
             SizedBox(height: 24),
             Container(
@@ -322,10 +336,7 @@ class TelaTema1 extends StatelessWidget {
               children: [
                 Icon(Icons.account_box, size: 20, color: Colors.black),
                 SizedBox(width: 8),
-                Text(
-                  'Sed do eiusmod ',
-                  style: TextStyle(fontSize: 16),
-                ),
+                Text('Sed do eiusmod ', style: TextStyle(fontSize: 16)),
               ],
             ),
 
@@ -348,7 +359,7 @@ class TelaTema2 extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: Text('Tema 2')),
       body: SingleChildScrollView(
-         padding: const EdgeInsets.all(16.0),
+        padding: const EdgeInsets.all(16.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -403,10 +414,7 @@ class TelaTema2 extends StatelessWidget {
               children: [
                 Icon(Icons.account_box, size: 20, color: Colors.black),
                 SizedBox(width: 8),
-                Text(
-                  'Sed do eiusmod ',
-                  style: TextStyle(fontSize: 16),
-                ),
+                Text('Sed do eiusmod ', style: TextStyle(fontSize: 16)),
               ],
             ),
 
@@ -419,7 +427,6 @@ class TelaTema2 extends StatelessWidget {
           ],
         ),
       ),
-      
     );
   }
 }
@@ -485,10 +492,7 @@ class TelaTema3 extends StatelessWidget {
               children: [
                 Icon(Icons.account_box, size: 20, color: Colors.black),
                 SizedBox(width: 8),
-                Text(
-                  'Sed do eiusmod ',
-                  style: TextStyle(fontSize: 16),
-                ),
+                Text('Sed do eiusmod ', style: TextStyle(fontSize: 16)),
               ],
             ),
 
@@ -504,5 +508,3 @@ class TelaTema3 extends StatelessWidget {
     );
   }
 }
-
-
